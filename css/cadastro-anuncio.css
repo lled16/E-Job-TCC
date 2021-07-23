@@ -1,0 +1,72 @@
+
+
+.imagensUP{
+	width: 100%;
+	display: inline-block;
+
+}
+
+#titulo-cad-a{
+	padding-top: 7px;
+	padding-left: 24px;
+	padding-right: 24px; 
+	color: #0d47a1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  #UPimagens{
+  	padding-bottom: 150px;
+  	height: 10vh;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  #UPimagens{
+  	padding-bottom: 120px;
+  	height: 10vh;
+  }
+  .inputUP{
+	height: 100%;
+	width: 100%;
+	}
+  .imagensUP{
+  	width: 100%;
+  }
+  #titulo-cad-a{
+	font-size: 2.5rem;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+  #UPimagens{
+  	padding-bottom: 50px;
+  	height: 10vh;
+  }
+
+  #campoEmail{
+  	width: 100%;
+  }
+
+  #campoTelefone{
+  	width: 100%;
+  }
+
+  #campoValor{
+  	width: 100%;
+  }
+
+  #campoCategoria{
+  	width: 100%;
+  }
+  
+}

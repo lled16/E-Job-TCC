@@ -1,0 +1,27 @@
+.conteudos{
+	text-align: center;
+	height: 250px; 
+	font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+  .conteudos{
+	text-align: center;
+	height: 140px; 
+	font-size: 9px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+  .conteudos{
+	text-align: center;
+	height: 70px; 
+	font-size: 5px;
+}
+}

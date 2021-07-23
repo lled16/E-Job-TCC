@@ -1,0 +1,17 @@
+#conteudo{
+	margin-bottom: 1%;
+	padding-left: 0%; 
+	width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  #conteudo{
+  	margin-bottom: 1%;
+	padding: 0%; 
+	width: 100%;
+  }
+
+}

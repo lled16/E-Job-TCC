@@ -1,0 +1,28 @@
+
+#bv{
+	display: inline-block;
+	padding: 2% 12% 2% 12%;
+	border-radius: 20px;
+	border: 1px solid lightgrey;
+}
+
+.texto{
+	font-size: 20px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+  .conteudos{
+	text-align: center;
+	height: 70px; 
+	font-size: 5px;
+}
+}

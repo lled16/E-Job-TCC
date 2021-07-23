@@ -1,0 +1,62 @@
+
+.input-field input[type=search]:focus:not(.browser-default) {
+  background-color: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #444;
+}
+
+.input-field input[type=search]:focus:not(.browser-default) + label i,
+.input-field input[type=search]:focus:not(.browser-default) ~ .mdi-navigation-close,
+.input-field input[type=search]:focus:not(.browser-default) ~ .material-icons {
+  color: #FFF;
+}
+
+
+#logo{
+width: 12%;
+vertical-align: middle;
+}
+
+#modal-login{
+  width: 40%;
+}
+
+  
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+  #logo{
+    width: 28%;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+  #logo{
+    width: 18%;
+  }
+  #barra-lateral{
+    width: 33%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  #modal-login{
+    width: 90%;
+  }
+  
+}
+
+
+
+
+

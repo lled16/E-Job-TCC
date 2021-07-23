@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+*{
+  font-family: 'Quicksand', sans-serif; /*Conteúdo*/
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Varela Round', sans-serif; /*Titulos*/
+}
+
+
+.bg-iron{
+  background: #f2f6f8;
+  background: -moz-linear-gradient(top, #f2f6f8 0%, #e0e0e0 50%, #e0eff9 100%);
+  background: -webkit-linear-gradient(top, #f2f6f8 0%,#e0e0e0 50%,#e0eff9 100%);
+  background: linear-gradient(to bottom, #f2f6f8 0%,#e0e0e0 50%,#e0eff9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=0 );
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.bg-bluegreen{
+  background: rgb(0,78,188);
+  background: -moz-linear-gradient(left, rgb(0,78,188) 0%, rgb(31,124,196) 43%, rgb(17,170,0) 100%);
+  background: -webkit-linear-gradient(left, rgb(0,78,188) 0%,rgb(31,124,196) 43%,rgb(17,170,0) 100%);
+  background: linear-gradient(to right, rgb(0,78,188) 0%,rgb(31,124,196) 43%,rgb(17,170,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038d3', endColorstr='#11aa00',GradientType=1 );
+}
+
+.bg-bluewhite{
+  background: rgb(255,255,255);
+  background: -moz-linear-gradient(top, rgb(255,255,255) 36%, rgb(0,95,229) 99%);
+  background: -webkit-linear-gradient(top, rgb(255,255,255) 36%,rgb(0,95,229) 99%);
+  background: linear-gradient(to bottom, rgb(255,255,255) 36%,rgb(0,95,229) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#005fe5',GradientType=0 );
+}
+
+.bg-radialblue{
+background: #0038d3;
+background: -moz-radial-gradient(center, ellipse cover, #0038d3 0%, #0b0954 100%);
+background: -webkit-radial-gradient(center, ellipse cover, #0038d3 0%,#0b0954 100%);
+background: radial-gradient(ellipse at center, #0038d3 0%,#0b0954 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0038d3', endColorstr='#0b0954',GradientType=1 );
+}
+
+.separador-blue{
+  background-color: #0d47a1;
+  padding-top: 0.8%; 
+  width: 65%;
+}
+
+.texto-azul{
+  color: #0d47a1;
+}
+
+.sombra-texto{
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+/*Media Query*/
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  .input-field{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 601px) {
+  .hide-on-med-and-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .hide-on-extra-large-only {
+    display: none !important;
+  }
+  
+}
+
+@media only screen and (min-width: 1201px) {
+  .show-on-extra-large {
+    display: block !important;
+  }
+  
+}
+
+@media only screen and (min-width: 993px) {
+  .show-on-large {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .show-on-medium {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .show-on-medium-and-down {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .center-on-small-only {
+    text-align: center;
+  }
+}
+
+
+
+/*Classes alteradas do Materialize*/
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: darkblue;
+}
+
+.tabs .tab.disabled a,
+.tabs .tab.disabled a:hover {
+  color: grey;
+  cursor: default;
+}
+
+.input-field .prefix.active {
+     color: #1e88e5;
+}
+
+.card .card-reveal {
+  padding: 24px;
+  position: absolute;
+  width: 100%;
+  overflow-y: auto;
+  left: 0;
+  top: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+}     
+.card .card-content .card-title {
+  display: inline-block;
+  line-height: 32px;
+  margin-bottom: 8px;
+}  
+
+.card .card-image img {
+  display: inline-block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+} 
+
+.card{
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .4s !important;
+  transition: -webkit-transform .4s !important;
+  transition: transform .4s !important;
+  transition: transform .4s, -webkit-transform .4s !important;
+  transition-delay: 1s !important;  
+}
+
+.s-transition{
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #1e88e5;
+  -webkit-box-shadow: 0 1px 0 0 #1e88e5;
+          box-shadow: 0 1px 0 0 #1e88e5;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #1e88e5;
+}
+
+
+
+
+
+
+
+/*---------------- Efeitos Hover Alterados ---------------*/
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4caf50;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Overline From Left */
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #FFF;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+  right: 0;
+}
+
+
+

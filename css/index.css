@@ -1,0 +1,42 @@
+#titulo{
+	font-size: 60px;
+}
+
+.bd4{
+  background-color: darkblue;
+}
+
+#barra-lateral{
+  border: 2px solid lightgrey;  
+  padding: 6%;
+  margin-top: 10px;
+}
+
+#search-width{
+  width: 50%;
+}
+
+
+/*Media Query*/
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+  #titulo{
+  	font-size: 45px;
+  	margin-bottom: 13px;
+  }
+  #search-width{
+  width: 90%;
+  } 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .hide-on-med-only {
+    display: none !important;
+  }
+  #barra-lateral{
+    width: 33%;
+  }
+}
